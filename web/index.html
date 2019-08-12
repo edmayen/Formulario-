@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang = "en" dir = "ltr">
+  <head>
+    <meta charset = "utf-8">
+    <title> Formulario </title>
+    <link rel = "stylesheet" href = "recursos/estilos.css">
+    <script type = "text/javascript" src = "recursos/funciones.js"></script>
+  </head>
+  <body>
+    <form name = "form1" action = "/ManejoFormulariosHTML/Servlet" method = "post" onsubmit = "return validarForm(this);">
+        <input type = "hidden" name = "oculto" value = "valorOculto">
+        <table width = "200" id = "one-column-emphasis">
+          <caption>
+            Formulario Registro de Datos
+          </caption>
+          <tr>
+            <td class = "oce-first">
+              Usuario: (*)
+            </td>
+            <td>
+              <input class = "default" type = "text" name = "usuario" value = "Escribir Usuario" onfocus = "this.select();"/>
+            </td>
+          </tr>
+          <tr>
+            <td class = "oce-first">
+              Contraseña: (*)
+            </td>
+            <td>
+              <input class = "default" type = "password" name = "password" onfocus = "this.select();">
+            </td>
+          </tr>
+          <tr>
+            <td class = "oce-first">
+              Tecnologías de Interés: (*)
+            </td>
+            <td>
+              Java <input type = "checkbox" name = "tecnologia" value = "java">
+              &nbsp;&nbsp;&nbsp;
+              .NET <input type = "checkbox" name = "tecnologia" value = "net">
+              &nbsp;&nbsp;&nbsp;
+              PHP <input type = "checkbox" name = "tecnologia" value = "php">
+            </td>
+          </tr>
+          <tr>
+            <td class = "oce-first">
+              Género: (*)
+            </td>
+            <td>
+              Masculino <input type = "radio" name = "genero" value = "M">
+              &nbsp;&nbsp;&nbsp;
+              Femenino <input type = "radio" name = "genero" value = "F">
+            </td>
+          </tr>
+          <tr>
+            <td class = "oce-first">
+              Ocupación: (*)
+            </td>
+            <td>
+              <select name = "ocupacion" class = "default">
+                <option value =" ">Seleccionar</option>
+                <option value =" 1">Profesor</option>
+                <option value = "2">Ingeniero</option>
+                <option value = "3">Jubilado</option>
+                <option value = "4">Otro</option>
+              </select>
+            </td>
+          </tr>
+          <tr>
+            <td class =" oce-first">
+              Música Favorita
+            </td>
+            <td>
+              <select name = "musica" multiple class = "default">
+                <option value = "rock">Rock</option>
+                <option value = "pop">Pop</option>
+                <option value = "salsa">Salsa</option>
+              </select>
+            </td>
+          </tr>
+          <tr>
+            <td class = "oce-first">
+              Comentarios:
+            </td>
+            <td>
+              <textarea name = "comentarios" rows = "2" cols = "30" class = "default" onfocus = "this.select();">Escribir un texto</textarea>
+            </td>
+          </tr>
+          <tr style="text-align:center;">
+            <td>
+              <input type = "reset" value = "Limpiar" class = "default">
+            </td>
+            <td>
+              <input type = "submit" value = "Enviar" class = "default">
+            </td>
+          </tr>
+        </table>
+    </form>
+  </body>
+</html>
+
