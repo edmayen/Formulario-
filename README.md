@@ -1,6 +1,5 @@
 # Manejo Formulario
-
-_Creación de un formulario com HTML, CSS y validaciones con JavaScript_
+_Manejo de formulario con Java_
 
 ## Comenzando 🚀
 
